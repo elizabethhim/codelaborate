@@ -14,7 +14,7 @@ info here
 
 Elizabeth Him
 
-Alexsandra Dziewulska
+Aleksandra Dziewulska
 
 Tiffany Lam
 
