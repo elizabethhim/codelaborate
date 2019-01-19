@@ -1,6 +1,6 @@
 # codelaborate
 
-Google App Scripts hackathon projcet written in Javascript for Rose Hacks
+Google App Scripts hackathon project written in Javascript for Rose Hacks
 
 ## Getting Started
 
