@@ -1,21 +1,22 @@
 function onOpen() {
   var ui = DocumentApp.getUi();
-  // Or DocumentApp or FormApp.
   ui.createMenu('Languages')
       .addItem('Python', 'python')
       .addToUi();
 }
 
 function python() {
-  DocumentApp.getUi() // Or DocumentApp or FormApp.
-     .alert(getAllText());
+  DocumentApp.getUi() 
+     .alert(getAllText())
+  
 }
 
-
 function getAllText(){
-  const body = DocumentApp.getActiveDocument();
+  const body = DocumentApp.getActiveDocument().getBody();
+  var styleF = {};
   var style = {};
-  style[DocumentApp.Attribute.FONT_FAMILY] = 'Courier New';
-  body.editAsText().setAttributes(style);
-  //return body;
+  styleF[DocumentApp.Attribute.FONT_FAMILY] = 'Courier New';
+  style[DocumentApp.Attribute.BACKGROUND_COLOR] = "#000000";
+  body.setAttributes(style);
+  var text = body.editAsText().setForegroundColor("#FFFFFF").setAttributes(styleF);
 }
